@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { motion } from 'framer-motion'
 
 import { EcuadorMap } from '../components/stats/EcuadorMap'
 import { StatsDisplay } from '../components/stats/StatsDisplay'
@@ -47,11 +48,15 @@ export function StatsSection() {
           Estas son algunas de las alertas de agresiones en provincias del Ecuador
         </p>
 
-        <div className="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
+        <motion.div 
+          className="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_1fr]"
+          layout
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        >
           {/* Map */}
-          <div className="flex justify-center p-4">
+          <motion.div layout className="flex justify-center p-4">
             <EcuadorMap selectedId={selectedId} onSelect={onSelect} className="w-full max-w-md" />
-          </div>
+          </motion.div>
 
           {/* Province card */}
           <div className="rounded-3xl bg-brand-secondary p-6 shadow-xl backdrop-blur-sm sm:p-8">
@@ -74,7 +79,7 @@ export function StatsSection() {
               </div>
             )}
           </div>
-        </div>
+        </motion.div>
 
         <StatsDisplay />
       </div>

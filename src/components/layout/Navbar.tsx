@@ -37,10 +37,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-brand-primary shadow-lg py-2'
-          : 'bg-brand-primary py-4'
+      className={`sticky top-0 z-50 transition-all duration-300 bg-brand-primary py-2 ${
+        isScrolled ? 'shadow-2xl' : ''
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6">
