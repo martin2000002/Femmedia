@@ -27,3 +27,7 @@ dist-ssr
 .firebase/
 firebase-debug.log*
 .firebaserc.local
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
