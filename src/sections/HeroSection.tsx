@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import logoLargoPositivo from '../assets/logo/largo-positivo.png'
 import journalistWomen from '../assets/journalist-women.jpg'
 
@@ -43,18 +45,22 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <a 
+            <motion.a 
               href="#cifras"
-              className="inline-flex items-center justify-center rounded-full bg-brand-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center justify-center rounded-xl bg-brand-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-colors duration-300 hover:bg-brand-secondary hover:shadow-xl"
             >
               Ver Cifras
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
               href="#conocenos"
-              className="inline-flex items-center justify-center rounded-full border-2 border-brand-primary bg-transparent px-8 py-3 text-base font-bold text-brand-primary transition-colors hover:bg-brand-primary/10 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center justify-center rounded-xl border-2 border-brand-primary bg-transparent px-8 py-4 text-base font-bold text-brand-primary transition-colors duration-300 hover:bg-brand-primary hover:text-white hover:shadow-xl"
             >
               Conócenos
-            </a>
+            </motion.a>
           </div>
         </div>
 

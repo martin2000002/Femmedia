@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "femmedia-org"
-  }
+    "default": "femmedia-org",
+    "prod": "femmedia-ec"
+  },
+  "targets": {},
+  "etags": {}
 }

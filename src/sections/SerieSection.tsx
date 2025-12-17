@@ -69,8 +69,8 @@ export function SerieSection() {
                 key={video.youtubeId + index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.05 + index * 0.03, duration: 0.2 }}
-                whileHover={{ scale: 1.03, y: -3, transition: { duration: 0.15 } }}
+                transition={{ delay: 0.05 + index * 0.03, duration: 0.08 }}
+                whileHover={{ scale: 1.03, y: -3, transition: { duration: 0.08 } }}
                 className="flex flex-col items-center group"
               >
                 <p className="mb-3 text-xs md:text-sm font-bold text-brand-primary text-center min-h-[2.5rem] flex items-center justify-center group-hover:text-brand-secondary transition-colors">
