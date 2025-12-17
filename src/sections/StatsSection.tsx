@@ -50,15 +50,15 @@ export function StatsSection() {
 
         <motion.div 
           className="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_1fr]"
-          layout
+          layout="position"
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         >
           {/* Map */}
-          <motion.div layout className="flex justify-center p-4">
+          <motion.div layout="position" className="flex justify-center p-4">
             <EcuadorMap selectedId={selectedId} onSelect={onSelect} className="w-full max-w-md" />
           </motion.div>
 
-          {/* Province card */}
+          {/* Province card*/}
           <div className="rounded-3xl bg-brand-secondary p-6 shadow-xl backdrop-blur-sm sm:p-8">
             <div className="flex items-start justify-between">
               <div>
